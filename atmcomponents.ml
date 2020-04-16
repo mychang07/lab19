@@ -70,8 +70,8 @@ let acquire_amount : unit -> int =
 let acquire_act : unit -> action =
   match read_line () with
   | 'B' -> () -> Balance
-  | '+' -> () -> Deposit acquire_amount ()
-  | '-'' -> () -> Withdraw acquire_amount ()
+  | '+' -> () -> Deposit _
+  | '-'' -> () -> Withdraw _
   | '='' -> () -> Done
   | 'X' -> () -> Exit
 
